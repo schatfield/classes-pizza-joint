@@ -16,3 +16,15 @@ meat_lovers.print_order()
 You should produce output in the terminal similiar to the following string.
 
 "I would like a 16-inch, deep-dish pizza with Pepperoni and Olives."""
+
+class Pizza:
+    def __init__(self):
+        self.size = "",
+        self.toppings = list(),
+        self.crust_type = "",
+
+    # def add_topping(self, new_topping):
+    #     self.toppings.append(new_topping)
+
+    def add_topping(self, new_topping):
+        self.toppings.append(new_topping)
