@@ -19,12 +19,47 @@ You should produce output in the terminal similiar to the following string.
 
 class Pizza:
     def __init__(self):
-        self.size = "",
-        self.toppings = list(),
-        self.crust_type = "",
-
-    # def add_topping(self, new_topping):
-    #     self.toppings.append(new_topping)
+        self.size = ""
+        self.toppings = []
+        self.crust_type = ""
 
     def add_topping(self, new_topping):
         self.toppings.append(new_topping)
+
+    # Add a method for outputting a description of the pizza (sample output below).
+    
+    def make_pizza(self):
+        
+            if len(self.toppings) == 1:
+                print(f"I would like a {self.size} inch, {self.crust_type} pizza with {''.join(self.toppings)}.")
+            elif len(self.toppings) > 1:
+                sentence = f"I would like a {self.size} inch, {self.crust_type} pizza with"
+
+            for index, topping in enumerate(self.toppings):
+                # if else statement
+                # if topping is last item in list, then add different string
+                # print(index)
+                if index == len(self.toppings) - 1:
+                    sentence += f"and {''.join(topping)}."
+                    
+                else: 
+                    sentence += f" {''.join(topping)}, "
+    
+            print(sentence)
+                
+               
+            
+           
+
+
+          
+
+
+
+meat_lovers = Pizza()
+meat_lovers.size = 16
+meat_lovers.crust_type = "Deep dish"
+meat_lovers.add_topping("Pepperoni")
+meat_lovers.add_topping("Olives")
+meat_lovers.add_topping("Poop")
+meat_lovers.make_pizza()
