@@ -46,14 +46,7 @@ class Pizza:
                     sentence += f" {''.join(topping)}, "
     
             print(sentence)
-                
-               
             
-           
-
-
-          
-
 
 
 meat_lovers = Pizza()
