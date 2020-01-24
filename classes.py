@@ -15,7 +15,7 @@ meat_lovers.add_topping("Olives")
 meat_lovers.print_order()
 You should produce output in the terminal similiar to the following string.
 
-"I would like a 16-inch, deep-dish pizza with Pepperoni and Olives."""
+"I would like a 16-inch, deep-dish pizza with Pepperoni and Olives.""" 
 
 class Pizza:
     def __init__(self):
